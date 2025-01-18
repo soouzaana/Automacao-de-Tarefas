@@ -4,7 +4,7 @@ import time
 
 pyautogui.PAUSE = 1.5
 
-# abrir o sistema
+# abrir o navegador
 pyautogui.press("win")
 pyautogui.write("chrome")
 pyautogui.press("enter")
@@ -27,7 +27,7 @@ tabela = pd.read_csv("produtos.csv")
 print(tabela)
 time.sleep(1.5)
 
-# cadastrar 1 produto
+# cadastrar os produtos
 for linha in tabela.index:
   pyautogui.click(x=757, y=258)
   codigo = tabela.loc[linha, "codigo"]
